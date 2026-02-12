@@ -1,8 +1,5 @@
 # State Record: Day 2
 
-**Date:** 2025-01-26  
-**Record ID:** state-002
-
 ## What Existed at Start of Day
 
 1. **origin.md** (immutable, created Day 1)
@@ -11,21 +8,21 @@
 
 ## What Was Added
 
-1. **state/state-002.md** (this file)
+1. **state/state-002.md** 
    - Purpose: Second daily state record
    - Documents: Addition of invariants and handover mechanisms
 
-2. **invariants.md** (to be created)
+2. **invariants.md**
    - Purpose: Formal declaration of system invariants
    - Contains: Rules that must not drift, examples of valid/invalid extensions
    - Enforcement: Structural inspection only, no code execution
 
-3. **HANDOVER.md** (to be created)
+3. **HANDOVER.md**
    - Purpose: Enable zero-context resumption by unknown future contributor
    - Audience: Someone who does not know, trust, or share context with original author
    - Does not: Prescribe decisions or assume obligation
 
-4. **README.md** (to be created)
+4. **README.md**
    - Purpose: Explain how to use origin and state records
    - Does not: Explain what they mean or why they should be followed
 
