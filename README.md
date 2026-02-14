@@ -7,6 +7,11 @@ Files:
 - `state/` - Directory of daily state records
 - `invariants.md` - Rules preventing semantic drift
 - `HANDOVER.md` - Instructions for zero-context resumption
+- `drift-detection-framework.md` - Semantic anchors and detection mechanism
+- `extension-template.md` - Mandatory disclosure form for extensions
+- `adversary-a.md`, `adversary-b.md`, `adversary-c.md` - Adversarial extension simulations
+- `continuity-conflict-analysis.md` - Drift analysis across adversaries
+- `SIMPLE-EXPLANATION.md` - Plain-language task explanation
 - `README.md` - This file
 
 ## How to Use These Artifacts
@@ -141,6 +146,21 @@ To verify system integrity:
 4. Check that all artifacts can be read in isolation
 
 If any check fails, the system has been corrupted.
+
+## How Drift Detection Works
+
+Semantic drift is detected structurally through:
+
+1. **Semantic Anchors** (drift-detection-framework.md) - Define immutable meanings and reference interpretations
+2. **Extension Template** (extension-template.md) - Forces explicit declaration of meaning changes
+3. **Detection Method** - Compare declarations to references, check for contradictions
+
+Drift becomes visible through:
+- **Absence** - Missing required sections in extensions
+- **Contradiction** - Claims vs actual changes
+- **Comparison** - Conflicting interpretations across extensions
+
+No automation. No enforcement. Only inspection.
 
 ## Questions This README Does Not Answer
 
